@@ -5,7 +5,7 @@ clear all
 clc
 
 % You can change these parameters
-N = 30; % Number of masses
+N = 20; % Number of masses
 M = 0.01; % The mass
 ks = 1000; % The spring coefficient
 bs = 0; % THe damping coefficient
@@ -36,7 +36,7 @@ tsim = 5;
 timespan = 0:ts:tsim;
 
 % Peridoc motion input to the the spring
-xin = 0.002*sin(2*pi*7.6948*4*timespan);
+xin = 0.002*sin(2*pi*7.7162*4*timespan);
 xindot = gradient(xin, 1);
 xinddot = gradient(xin, 2);
 
